@@ -17,7 +17,7 @@ const Content = () => {
     setErr(false);
     setLoading(true);
     try {
-      const EndPoint = "http://api.weatherapi.com/v1/forecast.json";
+      const EndPoint = "https://api.weatherapi.com/v1/forecast.json";
       const key = "cb29ec2d3c3e49559e7153521202212";
       const response = await axios.get(
         `${EndPoint}?key=${key}&q=${city}&days=3&lang=fr`
