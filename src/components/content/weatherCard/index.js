@@ -4,7 +4,7 @@ import moment from "moment";
 import Navbar from "../../navBar";
 import Cards from "../../card";
 const Content = () => {
-  const [city, setCity] = useState("Algiers");
+  const [city, setCity] = useState("algiers");
   const [error, setErr] = useState(Boolean);
   const [loading, setLoading] = useState(Boolean);
   const [data, setData] = useState(null);
