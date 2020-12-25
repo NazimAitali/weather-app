@@ -38,6 +38,7 @@
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(0.2rem);
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease-in;
 }
 .weather-top {
   height: 45%;
@@ -45,6 +46,7 @@
 .weather-top-left {
   width: 40%;
   height: 80%;
+  transition: all 0.5s ease-in;
 }
 .city-name {
   height: 15%;
@@ -55,12 +57,14 @@
   justify-content: flex-start;
   padding-left: 10%;
   font-size: 2em;
+  transition: all 0.5s ease-in;
 }
 .weather-detail {
   height: 80%;
   justify-content: space-evenly;
   align-items: flex-start;
   padding-left: 10%;
+  transition: all 0.5s ease-in;
 }
 .détails-icons {
   font-size: 3em;
@@ -75,6 +79,7 @@
 .weather-top-right {
   width: 60%;
   height: 80%;
+  transition: all 0.5s ease-in;
 }
 .temp {
   height: 50%;
@@ -88,9 +93,11 @@
   height: 100%;
   width: 40%;
   align-items: flex-start;
+  transition: all 0.5s ease-in;
 }
 .img img {
   width: 79%;
+  transition: all 0.5s ease-in;
 }
 .condition-container {
   width: 60%;
@@ -110,11 +117,10 @@
   border-radius: 10px;
   background-color: rgba(160, 212, 255, 0.3);
 }
+.forecast-day,
 .forecast-temp {
   font-size: 1.4em;
-}
-.forecast-day {
-  font-size: 1.4em;
+  transition: all 0.5s ease-in;
 }
 .ant-input-group .ant-input {
   color: white;
@@ -122,32 +128,60 @@
   backdrop-filter: blur(0.2rem);
   box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.25);
 }
-.today{
+.today {
   padding: 1%;
+}
+
+.forecase-img img {
+  width: 79%;
+  transition: all 0.5s ease-in;
 }
 @media only screen and (max-width: 992px) {
   .details-weather {
     width: 95%;
+    transition: all 0.5s ease-in;
   }
   .weather-top {
     flex-direction: column;
+    transition: all 0.5s ease-in;
   }
   .weather-top-left {
     width: 100%;
     flex-direction: row;
+    transition: all 0.5s ease-in;
   }
   .weather-top-right {
     width: 100%;
+    transition: all 0.5s ease-in;
   }
   .weather-detail {
+    width: 70%;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
+    transition: all 0.5s ease-in;
   }
   .img {
     align-items: center;
+    transition: all 0.5s ease-in;
   }
   .img img {
     width: 39%;
+    transition: all 0.5s ease-in;
+  }
+  .day {
+    width: 30%;
+    font-size: 1.5em;
+    transition: all 0.5s ease-in;
+  }
+  .forecast-day,
+  .forecast-temp {
+    font-size: 90%;
+    transition: all 0.5s ease-in;
+  }
+  .forecase-img img {
+    width: 79%;
+    transition: all 0.5s ease-in;
   }
 }

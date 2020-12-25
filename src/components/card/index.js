@@ -64,7 +64,7 @@ const Cards = ({ loading, error, data }) => {
           <div className="center maxW weather-bottom">
             {data.forecast.forecastday.map((forecast, i) => (
               <div index={i} className="center column forecast-items">
-                <div className="center">
+                <div className="center forecase-img">
                   <img src={forecast.day.condition.icon} alt="icone"></img>
                 </div>
                 <div className="center">
